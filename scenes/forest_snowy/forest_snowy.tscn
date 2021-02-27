@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/forest_snowy/tree_middle.png" type="Texture" id=1]
+[ext_resource path="res://scenes/forest_snowy/trees_back.png" type="Texture" id=2]
+[ext_resource path="res://scenes/forest_snowy/background.png" type="Texture" id=3]
+[ext_resource path="res://scenes/forest_snowy/distant_trees.png" type="Texture" id=4]
+[ext_resource path="res://scenes/forest_snowy/snow_front.png" type="Texture" id=5]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.5, 1 )
+motion_mirroring = Vector2( 480, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 0, 15 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 480, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 0, 15 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 1.5, 1 )
+motion_mirroring = Vector2( 480, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 0, 15 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 2, 1 )
+motion_mirroring = Vector2( 480, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer4"]
+position = Vector2( 0, 15 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 2.5, 1 )
+motion_mirroring = Vector2( 480, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer5"]
+position = Vector2( 0, 15 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 480.0
+margin_bottom = 15.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_top = 255.0
+margin_right = 480.0
+margin_bottom = 270.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
